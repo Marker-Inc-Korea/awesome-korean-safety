@@ -1,5 +1,7 @@
 # 🛡️ Awesome Korean Safety [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+**🌐 Language:** **한국어** · [English](README.en.md)
+
 한국어 LLM **안전성(Safety) 벤치마크 및 데이터셋** 정보를 모아놓은 awesome list입니다.
 
 LLM의 유해성, 사회적 편향, 혐오표현, 민감 질문 대응, 레드티밍, 멀티모달 안전성 등을 **한국어·한국 문화 맥락**에서 평가할 수 있는 벤치마크들을 정리합니다.
