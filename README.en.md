@@ -17,7 +17,7 @@ The format is inspired by [Awesome-LLM-Safety](https://github.com/ydyjya/Awesome
 - [Values & Alignment](#-values--alignment)
 - [Social Bias](#-social-bias)
 - [Hate / Offensive / Toxicity](#-hate--offensive--toxicity)
-- [Harmful Instruction, Red-teaming & Guardrails](#-harmful-instruction-red-teaming--guardrails)
+- [Harmful Instruction, Red-teaming, Jailbreak & Guardrails](#-harmful-instruction-red-teaming-jailbreak--guardrails)
 - [Multimodal Safety](#-multimodal-safety)
 - [Multilingual (incl. Korean)](#-multilingual-incl-korean)
 - [Domain-specific](#-domain-specific)
@@ -67,13 +67,15 @@ Datasets for detecting and classifying hate, offensive, and toxic language — w
 
 > ℹ️ **KOTOX** (obfuscation, Lee et al.) and **KoTox** (harmful instruction, Byun et al.) are similarly named but distinct datasets.
 
-## 🎯 Harmful Instruction, Red-teaming & Guardrails
+## 🎯 Harmful Instruction, Red-teaming, Jailbreak & Guardrails
 
-Datasets that elicit harmful/abusive model outputs (red-teaming) or are used for ethical tuning and guardrail training.
+Datasets that elicit harmful/abusive model outputs (red-teaming / jailbreak) or are used for ethical tuning and guardrail training.
+> 💡 Jailbreak-related data also appears outside this section: [CSRT](#-multilingual-incl-korean) (code-switching jailbreak), [XL-SafetyBench](#-multilingual-incl-korean) (country-grounded jailbreak), and [KSAFE-MM](#-multimodal-safety) (multimodal jailbreak).
 
 | Name | Focus | Size | Creator | Venue (Year) | Commercial | Data |
 | --- | --- | --- | --- | --- | --- | --- |
 | [CAGE / KoRSET](https://arxiv.org/abs/2602.20170) | Culturally adaptive red-teaming (grounded in Korean law/culture) | KoRSET ≈7,161 prompts | SelectStar AI (Kim et al.) | arXiv 2026.02 | ❓ (restricted release) | [arXiv](https://arxiv.org/abs/2602.20170) |
+| [EN-KO Jailbreak Prompts](https://koreascience.or.kr/article/JAKO202518939602628.page) | Jailbreak prompt classification (benign / harmful / jailbreak) | jailbreak 86,512 (+ benign 64,979 · harmful 26,480) | Soongsil Univ. · Iroun&Company (Park et al.) | KIISC Journal 2025 | ❓ (data release unconfirmed) | [Paper](https://koreascience.or.kr/article/JAKO202518939602628.page) |
 | [KoTox](https://github.com/byunsj/KoTox-Korean-Toxic-Instruction-Dataset) | Harmful-instruction handling (political bias · crime · hate) | 39K (instruction-output pairs) | Seoul National Univ. (Byun et al.) | NeurIPS 2023 (WS) | ✅ (MIT) | [GitHub](https://github.com/byunsj/KoTox-Korean-Toxic-Instruction-Dataset) |
 | [K-Guardrail](https://github.com/skan0779/korean-guardrail-dataset) | AI-agent guardrail evaluation (jailbreak · PII, etc.) | 320+ prompts | skan0779 (open-source) | GitHub 2025 | ❓ (unspecified) | [GitHub](https://github.com/skan0779/korean-guardrail-dataset) |
 | [EVE (v1/v2)](https://arxiv.org/abs/2403.06537) | Misuse red-teaming of open-source models (criminal advice) | v1 200 QA + v2 600 (precedent-based) | AAAI 2024 authors | AAAI 2024 | ❌ (not released) | [arXiv](https://arxiv.org/abs/2403.06537) |
@@ -85,7 +87,7 @@ Evaluate safety across multimodal inputs — image, video, audio — in addition
 | Name | Focus | Size | Creator | Venue (Year) | Commercial | Data |
 | --- | --- | --- | --- | --- | --- | --- |
 | [AssurAI](https://huggingface.co/datasets/TTA01/AssurAI) | 35 Korean socio-cultural risk factors, multimodal (text·image·video·audio) | 11,480 instances | TTA · KAIST · Kakao, etc. | arXiv 2025.11 | ❌ (CC BY-NC 4.0) | [🤗 HF](https://huggingface.co/datasets/TTA01/AssurAI) |
-| [KSAFE-MM](https://arxiv.org/abs/2605.28013) | Korea-specific MLLM safety (incl. cross-modal attacks) | 14,135 samples (G: translated / C: Korea-specific) | Yongwoo Kim et al. | arXiv 2026.05 | ❓ (verify) | [arXiv](https://arxiv.org/abs/2605.28013) |
+| [KSAFE-MM](https://arxiv.org/abs/2605.28013) | Korea-specific MLLM safety (jailbreak · cross-modal attacks) | 14,135 samples (G: translated / C: Korea-specific) | Yongwoo Kim et al. | arXiv 2026.05 | ❓ (verify) | [arXiv](https://arxiv.org/abs/2605.28013) |
 
 ## 🌐 Multilingual (incl. Korean)
 
