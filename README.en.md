@@ -22,8 +22,6 @@ The format is inspired by [Awesome-LLM-Safety](https://github.com/ydyjya/Awesome
 - [Multilingual (incl. Korean)](#-multilingual-incl-korean)
 - [Domain-specific](#-domain-specific)
 - [Leaderboards](#-leaderboards)
-- [Related Resources](#-related-resources)
-- [Excluded / Pending Items](#-excluded--pending-items)
 - [Contributing](#-contributing)
 
 ---
@@ -57,6 +55,7 @@ Datasets for detecting and classifying hate, offensive, and toxic language — w
 | [K-MHaS](https://github.com/adlnlp/K-MHaS) | Multi-label hate speech (8 classes + 1) | 109,692 utterances | Univ. of Sydney · UWA | COLING 2022 | ✅ (CC BY-SA 4.0) | [🤗 HF](https://huggingface.co/datasets/jeanlee/kmhas_korean_hate_speech) |
 | [KOLD](https://github.com/boychaboy/KOLD) | Hierarchical offensive language (type · target · span) | 40,429 (comments) | KAIST · Softly AI | EMNLP 2022 | ❓ (unspecified) | [GitHub](https://github.com/boychaboy/KOLD) |
 | [AIHub Harmful Expression Detection](https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=71833) | Harmful-expression detection · 11-category classification for LLM corpora | Large-scale (80% train / 20% test) | NIA · TTA | AI Hub | ❓ (AI Hub terms) | [AI Hub](https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=71833) |
+| [AIHub Text Ethics Verification](https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=558) | Unethical-sentence verification (censure · hate · discrimination · violence · crime · sexual · profanity) | 453,340 sentences / 132,807 conversation sets | Simsimi Inc. et al. · NIA | AI Hub 2021 | ❓ (AI Hub terms) | [AI Hub](https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=558) |
 | [UnSmile](https://github.com/smilegate-ai/korean_unsmile_dataset) | Multi-label hate speech (women/region/religion, 10 labels) | 18,742 sentences | Smilegate AI | 2022 | ❌ (CC BY-NC-ND 4.0 · contact) | [GitHub](https://github.com/smilegate-ai/korean_unsmile_dataset) |
 | [HateScore](https://github.com/sgunderscore/hatescore-korean-hate-speech) | Hate-speech robustness (HITL + neutral false-positive reduction) | ≈11K | Underscore | 2022 | ❓ (unspecified) | [GitHub](https://github.com/sgunderscore/hatescore-korean-hate-speech) |
 | [APEACH](https://github.com/jason9693/APEACH) | Hate-speech evaluation set (crowd-generated) | ≈3.7K (eval set) | Kakao · Soongsil · SNU | EMNLP 2022 (Findings) | ✅ (CC BY-SA 4.0) | [🤗 HF](https://huggingface.co/datasets/jason9693/APEACH) |
@@ -74,7 +73,7 @@ Datasets that elicit harmful/abusive model outputs (red-teaming / jailbreak) or 
 
 | Name | Focus | Size | Creator | Venue (Year) | Commercial | Data |
 | --- | --- | --- | --- | --- | --- | --- |
-| [CAGE / KoRSET](https://arxiv.org/abs/2602.20170) | Culturally adaptive red-teaming (grounded in Korean law/culture) | KoRSET ≈7,161 prompts | SelectStar AI (Kim et al.) | arXiv 2026.02 | ❓ (restricted release) | [arXiv](https://arxiv.org/abs/2602.20170) |
+| [CAGE / KoRSET](https://arxiv.org/abs/2602.20170) | Culturally adaptive red-teaming (grounded in Korean law/culture) | KoRSET ≈7,161 prompts | SelectStar AI (Kim et al.) | arXiv 2026.02 | ❓ (public · license unverified) | [arXiv](https://arxiv.org/abs/2602.20170) |
 | [EN-KO Jailbreak Prompts](https://koreascience.or.kr/article/JAKO202518939602628.page) | Jailbreak prompt classification (benign / harmful / jailbreak) | jailbreak 86,512 (+ benign 64,979 · harmful 26,480) | Soongsil Univ. · Iroun&Company (Park et al.) | KIISC Journal 2025 | ❓ (data release unconfirmed) | [Paper](https://koreascience.or.kr/article/JAKO202518939602628.page) |
 | [KoTox](https://github.com/byunsj/KoTox-Korean-Toxic-Instruction-Dataset) | Harmful-instruction handling (political bias · crime · hate) | 39K (instruction-output pairs) | Seoul National Univ. (Byun et al.) | NeurIPS 2023 (WS) | ✅ (MIT) | [GitHub](https://github.com/byunsj/KoTox-Korean-Toxic-Instruction-Dataset) |
 | [K-Guardrail](https://github.com/skan0779/korean-guardrail-dataset) | AI-agent guardrail evaluation (jailbreak · PII, etc.) | 320+ prompts | skan0779 (open-source) | GitHub 2025 | ❓ (unspecified) | [GitHub](https://github.com/skan0779/korean-guardrail-dataset) |
@@ -118,29 +117,6 @@ Safety datasets specialized for particular risk domains (factuality/hallucinatio
 | --- | --- | --- | --- |
 | [Open Ko-LLM Leaderboard2](https://huggingface.co/spaces/upstage/open-ko-llm-leaderboard) | Ko-Harmlessness (bias · hate · sensitiveness · illegal), KorNAT-Social-Value, KorNAT-Knowledge | Upstage & NIA | Private eval set, comprehensive Korean LLM evaluation ([paper](https://arxiv.org/abs/2410.12445)) |
 
----
-
-## 📚 Related Resources
-
-- [NAVER CLOVA Tech Blog — Korean safety benchmarks (SQuARe, KoSBi, KoBBQ, KorNAT)](https://clova.ai/en/tech-blog/en-using-korean-benchmark-datasets-to-develop-and-evaluate-hyperclova-x-and-other-safe-and-trustworthy-language-models)
-- [naver-ai/korean-safety-benchmarks](https://github.com/naver-ai/korean-safety-benchmarks) — official repo for SQuARe & KoSBi
-- [LLM Safety Datasets (HF Collection)](https://huggingface.co/collections/nayohan/llm-safety-datasets-668a8ba41725ae18ed3353a8) — collection of safety/ethics datasets incl. Korean
-- [AwesomeKorean_Data](https://github.com/songys/AwesomeKorean_Data) — comprehensive Korean dataset list (incl. hate-speech section)
-- [Awesome-LLM-Safety](https://github.com/ydyjya/Awesome-LLM-Safety) — general LLM safety (English)
-- [AI Hub](https://aihub.or.kr) — NIA-operated public datasets (text ethics/trustworthiness, etc.)
-
----
-
-## 🔎 Excluded / Pending Items
-
-For curation reliability, items that could not be verified or do not fit the Korean LLM safety scope are excluded.
-
-- **K-FalseRefusal** — could not find/verify a Korean over-refusal dataset (only English *FalseReject*, *OR-Bench*, *PHTest* exist). **Excluded as unverifiable** (PRs welcome if it exists).
-- **KorMedMCQA / KorMedMCQA-V** — medical-licensing-exam knowledge QA; closer to a **domain capability benchmark** than safety. Excluded.
-- **KoDF** — Korean **deepfake video detection** (media forensics); outside the LLM/generative-text safety scope. Excluded.
-- **Korean Hate Speech Analysis Dataset (Datumo)** — could not confirm the described form (11 categories · Likert · Datumo) from a single source. **Pending.**
-
-> If you disagree or know a source, please open an issue/PR.
 
 ---
 
